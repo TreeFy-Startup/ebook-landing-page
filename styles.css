@@ -14,10 +14,12 @@ body {
 .logo-nombre {
     display: flex;
     align-items: center;
+    font-size: 17px;
 }
 .logo-img {
     height: 50px;
     justify-content: center;
+    margin: 10px;
 }
 .nombre-producto {
     color: #FFFFFF;
@@ -26,38 +28,133 @@ body {
     text-decoration: none;
     color: #FFFFFF;
     padding: 10px;
+    font-size: 20px;
 }
 /*INICIO*/
+.cuerpo-pagina {
+    background-color: #D0D5FF;
+}
 #inicio {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 450px;
 }
 .clase-inicio {
     margin: 50px;
 }
+.clase-inicio h2 {
+    font-size: 70px;
+    margin-bottom: 5px;
+}
+.clase-inicio p {
+    font-size: 22px;
+}
+.clase-inicio .text-box {
+    font-size: 22px;
+}
+.clase-inicio .button {
+    font-size: 22px;
+    size: 10px;
+}
 .img-1 {
     height: 100px;
     margin: 50px;
+    margin-bottom: 100px;
 }
+
 /*CARACTERISTICAS*/
 #caracteristicas {
     text-align: center;
+    padding-bottom: 450px;
 }
 .cajones-caracteristicas {
     display: flex;
-    padding: 40px;
+    justify-content: center;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+}
+.titulo-caracteristicas h3 {
+    font-size: 50px;
+}
+.titulo-caracteristicas h2 {
+    font-size: 40px;
+}
+.carta {
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #FFDFBA;
 }
 .carta h3 {
-    padding-bottom: 1px;
+    padding-bottom: 0px;
+    font-size: 30px;
 }
 .carta p {
-    padding: 40px;
+    margin: 30px;
     text-align: justify;
+    font-size: 25px;
 }
-
+.carta .button {
+    font-size: 22px;
+    size: 10px;
+    margin: 10px;
+}
+/*PROCESO*/
+#proceso {
+    text-align: center;
+    padding-bottom: 450px;
+}
+#proceso .contenedor {
+    text-align: center;
+    display: flex;
+    padding: 30px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+#proceso .titulo-proceso h3 {
+    font-size: 50px;
+}
+#proceso .titulo-proceso h2 {
+    font-size: 40px;
+}
+/*PRECIOS*/
+#precios {
+    text-align: center;
+    padding-bottom: 450px;
+}
+#precios .contenedor {
+    text-align: center;
+    display: flex;
+    padding: 30px;
+    padding-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#precios .precios-titulo div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#precios .precios-titulo h3 {
+    font-size: 50px;
+}
+#precios .precios-titulo h2 {
+    font-size: 40px;
+}
+#precios .contenedor .carta .l1 {
+    font-size: 20px;
+}
 
 /*PIE DE PAGINA*/
 .treefy-copyright {
-    margin: 50px;
+    padding: 30px;
+    background-color: #494949;
+    text-align: center;
+}
+.treefy-copyright footer p {
+    
+    color: #FFFFFF;
 }
