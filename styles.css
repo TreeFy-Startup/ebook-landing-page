@@ -147,6 +147,19 @@ body {
 #precios .contenedor .carta .l1 {
     font-size: 20px;
 }
+#precios .contenedor .carta {
+    padding-bottom: 40px;
+}
+/*Boton empezar*/
+#inicio .clase-inicio .boton, #precios .contenedor .carta .boton {
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    background: #000B45;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 15px;
+}
 
 /*PIE DE PAGINA*/
 .treefy-copyright {
