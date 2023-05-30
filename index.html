@@ -1,172 +1,397 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/logo-treefy.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/styles.css">
+
         <title>Treefy - Landing Page</title>
-        <link rel="stylesheet" type="text/css" href="styles.css" />
     </head>
     <body>
-        <header class="menu-toolbar header">
-            <nav class="listado navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <div class="logo-nombre container">
-                    <img src="logo-treefy.png" alt="logo" class="logo-img">
-                    <a href="#inicio"><h2 class="nombre-producto">Treefy</h2></a>
-                </div>
-                <button class="navbar-toggler navbar-links" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav" style="display: block;">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#inicio">Inicio</a>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo-treefy2.png" alt="" class="nav__logo-img">
+                    Treefy
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#caracteristicas">Características</a>
+
+                        <li class="nav__item">
+                            <a href="#caracteristicas" class="nav__link">Caracteristicas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#precios">Precios</a>
+
+                        <li class="nav__item">
+                            <a href="#resenias" class="nav__link">Reseñas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#reseñas">Reseñas</a>
+
+                        <li class="nav__item">
+                            <a href="#precios" class="nav__link">Precios</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="boton" href="../ebook-app/login_cristian.html">Prueba gratuita</a>
-                        </li>
+
+                        <a href="#home" class="button button--ghost">Prueba Gratuita</a>
                     </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <img src="assets/img/logo-treefy2.png" alt="" class="nav__img">
                 </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+
             </nav>
         </header>
-        <section class="cuerpo-pagina">
-            <section id="inicio">
-                <div class="clase-inicio">
-                    <h2 class="clase-titulo">Controla tu dinero, <br>alcanza tus metas.</h2>
-                    <p class="clase-parrafo">
-                        Alcanza tus metas financieras universitarias.<br>
-                        ¿Eres un estudiante universtario buscando una herramienta financiera fácil de usar?<br>
-                        Aprende a manejar tu dinero como un experto.<br>
-                    </p>
-                    <input class="text-box" placeholder="Ingrese su correo" type="email" name="text_box_correo" required="">
-                    <a class="boton" href="../ebook-app/login_cristian.html">Enviar</a>
-                </div>
-                <div class="clase-imagen-1">
-                    <img src="imagen-1.png" alt="imagen-1" class="img-1">
+
+        <main class="main">
+            <!--==================== Inicio ====================-->
+            <section class="home container" id="home">
+                <div class="swiper home-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- SLIDE 1 -->
+                        <section class="swiper-slide">
+                            <div class="home__content grid">
+                                <div class="home__group">
+                                    <img src="assets/img/Shield.png" alt="" class="home__img">
+                                    <div class="home__indicator"></div>
+    
+                                    <div class="home__details-img">
+                                        <h4 class="home__details-title">App</h4>
+                                        <span class="home__details-subtitle">Segura y Eficaz</span>
+                                    </div>
+                                </div>
+    
+                                <div class="home__data">
+                                    <h3 class="home__subtitle">App de Gestion Financiera</h3>
+                                    <h1 class="home__title">Treefy</h1>
+                                    <p class="home__description">Controla tus gastos con nuestra app de gestion financiera. <br>
+                                        Personalizala de acuerdo a tus gustos y situacion actual. <br>
+                                        Segura y facil de usar.
+                                    </p>
+
+                                    <div class="home__buttons">
+                                        <a href="#inicio" class="button">Descargala Ya!</a>
+                                        <a href="#" class="button--link button--flex">Seguridad<i class='bx bx-right-arrow-alt button__icon'></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- SLIDE 2 -->
+                        <section class="swiper-slide">
+                            <div class="home__content grid">
+                                <div class="home__group">
+                                    <img src="assets/img/Key.png" alt="" class="home__img">
+                                    <div class="home__indicator"></div>
+    
+                                    <div class="home__details-img">
+                                        <h4 class="home__details-title">Seguridad</h4>
+                                        <span class="home__details-subtitle">Su cuenta estara segura</span>
+                                    </div>
+                                </div>
+    
+                                <div class="home__data">
+                                    <h3 class="home__subtitle">Seguridad</h3>
+                                    <h1 class="home__title">Huella Dactilar y Escaneo del Rostro</h1>
+                                    <p class="home__description">Ofrecer seguridad a nuestros clientes es de vital importancia.</p>
+
+                                    <div class="home__buttons">
+                                        <a href="#caracteristicas" class="button">+Caracteristicas</a>
+                                        <a href="#" class="button--link button--flex">Rastrea tus gastos<i class='bx bx-right-arrow-alt button__icon'></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- SLIDE 3 -->
+                        <section class="swiper-slide">
+                            <div class="home__content grid">
+                                <div class="home__group">
+                                    <img src="assets/img/Chart.png" alt="" class="home__img">
+                                    <div class="home__indicator"></div>
+    
+                                    <div class="home__details-img">
+                                        <h4 class="home__details-title">Estadisticas</h4>
+                                        <span class="home__details-subtitle">Rastrea tus Gastos</span>
+                                    </div>
+                                </div>
+    
+                                <div class="home__data">
+                                    <h3 class="home__subtitle">Herramientas de Analisis</h3>
+                                    <h1 class="home__title">Analiza tus gastos</h1>
+                                    <p class="home__description">Podras evaluar facilmente tus gastos con nuestra App</p>
+
+                                    <div class="home__buttons">
+                                        <a href="#precios" class="button">Ver Precios</a>
+                                        <a href="#inicio" class="button--link button--flex">Descargala Ya!<i class='bx bx-right-arrow-alt button__icon'></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
-            <section id="caracteristicas">
-                <div class="titulo">
-                    <h3>¿Por qué elegirnos?</h3>
-                    <h2>Nuestras funciones</h2>
-                </div>
-                <div class="div-cartas">
-                    <div class="carta">
-                        <h3>Actualizaciones en tiempo real.</h3>
-                        <p>
-                            Permite a los usuarios recibir alertas y notificaciones 
-                            cuando se acerque una fecha de vencimiento o de pagos de 
-                            matrícula o préstamos estudiantiles.
-                        </p>
+            
+            <!--==================== Caracteristicas ====================-->
+            <section class="section caracteristicas" id="caracteristicas">
+                <h2 class="section__title">Caracteristicas</h2>
+
+                <div class="caracteristicas__container container grid">
+                    <div class="caracteristicas__data">
+                        <img src="assets/img/src-facil-uso.png" alt="" class="caracteristicas__img">
+                        <h3 class="caracteristicas__title">Agrega alarmas</h3>
+                        <p class="caracteristicas__description">Personaliza las alarmas tanto como tu quieras.</p>
                     </div>
-                    <div class="carta">
-                        <h3>Soporte a tiempo completo.</h3>
-                        <p>
-                            Realmente apreciamos su tiempo y energía, por lo tanto, lo 
-                            ayudaremos en cualquier momento.
-                        </p>
+
+                    <div class="caracteristicas__data">
+                        <img src="assets/img/src-agrego-transacciones.png" alt="" class="caracteristicas__img">
+                        <h3 class="caracteristicas__title">Agrega transacciones</h3>
+                        <p class="caracteristicas__description">Agrega tus transacciones rapidamente</p>
                     </div>
-                    <div class="carta">
-                        <h3>Planificación y metas financieras personalizadas.</h3>
-                        <p>
-                            Permiten a los usuarios tener un mayor control y conocimiento 
-                            sus finanzas, establecer una base financiera sólida y lograr 
-                            objetivos a largo plazo.
-                        </p>
-                    </div>
-                    <div class="carta">
-                        <h3>100% Segura.</h3>
-                        <p>
-                            Utilizamos el sistema de encriptación más seguro para que 
-                            tus datos no sean conocidos por ningún tercero.
-                        </p>
+
+                    <div class="caracteristicas__data">
+                        <img src="assets/img/src-visualiza-ultimos-gastos.png" alt="" class="caracteristicas__img">
+                        <h3 class="caracteristicas__title">Visualiza Ultimos Movimientos</h3>
+                        <p class="caracteristicas__description">Ve rapidamente tus ultimos movimientos</p>
                     </div>
                 </div>
             </section>
-            <section id="proceso">
-                <div class="titulo">
-                    <h3>Procesos de trabajo</h3>
-                    <h2>¿Cómo funciona?</h2>
-                </div>
-                <div class="div-cartas">
-                    <div class="carta">
-                        <h3>Paso 1.</h3>
-                        <h2>Iniciar sesión o registrarse.</h2>
-                        <p>
-                            Registrarse es muy fácil y no tan complicado, tus datos son 
-                            tu privacidad, no tomamos ningún dato.
-                        </p>
-                    </div>
-                    <div class="carta">
-                        <h3>Paso 2.</h3>
-                        <h2>Colocar tu cuenta bancaria.</h2>
-                        <p>
-                            Tu seguridad es nuestra máxima prioridad. Implementamos medidas 
-                            de seguridad de vanguardia, como la encriptación y autenticación 
-                            de dos pasos para proteger tu información financiera.
-                        </p>
-                    </div>
-                    <div class="carta">
-                        <h3>Paso 3.</h3>
-                        <h2>Establecer metas y/o planificaciones.</h2>
-                        <p>
-                            Alcanza tus objetivos financieros con nuestros herramientas de presupuestos,
-                            ahorro y seguimiento de gastos. Toma decisiones financieras informadas y efectivas 
-                            con nuestra herramienta fácil de usar de planifiación financiera.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section id="precios">
-                <div class="titulo">
-                    <h3>Nuestros precios.</h3>
-                    <h2>Plan de precios.</h2>
-                    <div>
-                        <div>
-                            <b>Mensual</b>
+            <!--==================== Resenias ====================-->
+            <section class="section resenias" id="resenias">
+                <h2 class="section__title">Reseñas</h2>
+
+                <div class="resenias__container container">
+                    <div class="swiper resenias-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="resenias__content swiper-slide">
+                                <img src="assets/img/resenia_alejandra.png" alt="" class="resenias__img">
+                                <h3 class="resenias__title">Alejandra Balcaire</h3>
+                                <span class="resenias__subtitle">Me siento muy comoda con la funcionalidad de la App! Muy contenta!</span>
+                                
+                                <div class="resenias__prices">
+                                    <span class="resenias__price">Plan de Prueba</span>
+                                </div>
+
+                            </div>
+        
+                            <div class="resenias__content swiper-slide">
+                                <img src="assets/img/resenia_maria.png" alt="" class="resenias__img">
+                                <h3 class="resenias__title">Maria Moreno</h3>
+                                <span class="resenias__subtitle">Me facilito la vida un monton. Me alegro pagar por esta App!</span>
+        
+                                <div class="resenias__prices">
+                                    <span class="resenias__price">Plan Premium</span>
+                                </div>
+
+                            </div>
+        
+                            <div class="resenias__content swiper-slide">
+                                <img src="assets/img/resenia_manuel.png" alt="" class="resenias__img">
+                                <h3 class="resenias__title">Juan Manuel</h3>
+                                <span class="resenias__subtitle">Encuentro la app muy facil de usar. Me encanta! Muy satisfecho con el producto.</span>
+        
+                                <div class="resenias__prices">
+                                    <span class="resenias__price">Plan Gratuito</span>
+                                </div>
+
+                            </div>
+                            
                         </div>
-                        <div>
-                            <b>Anual</b>
-                        </div>
-                    </div>
-                </div>
-                <div class="div-cartas">
-                    <div class="carta carta-1">
-                        <h3>Plan gratuito.</h3>
-                        <h2>$0.</h2>
-                        <a class="boton" href="../ebook-app/login_cristian.html">Empezar</a>
-                        <h3 class="l1">Funciones limitadas.</h3>
-                    </div>
-                    <div class="carta carta-2">
-                        <h3>Plan de inicio.</h3>
-                        <h2>$10.</h2>
-                        <h4>Por mes.</h4>
-                        <a class="boton" href="../ebook-app/login_cristian.html">Empezar prueba</a>
-                    </div>
-                    <div class="carta carta-3">
-                        <h4>Mejor oferta</h4>
-                        <h3>Plan Avanzado</h3>
-                        <h2>$189</h2>
-                        <h4>Al año</h4>
-                        <a class="boton" href="../ebook-app/login_cristian.html">Empezar prueba</a>
                     </div>
                 </div>
             </section>
-        </section>
-        <section class="treefy-copyright">
-            <footer>
-                <p>&copy;2023 Treefy. Todos los derechos reservados.</p>
+
+            <!--==================== Descuento====================-->
+            <section class="section discount">
+                <div class="discount__container container grid">
+                    <div class="discount__data">
+                        <h2 class="discount__title">50% Descuento al Plan Premium Mensual<br> 5 dias Restantes</h2>
+                        <a href="#home" class="button">Suscribete Ya!</a>
+                    </div>
+
+                    <img src="assets/img/discount-img.png" alt="" class="discount__img">
+                </div>
+            </section>
+
+            <!--==================== Precios ====================-->
+            <section class="section precios" id="precios">
+                <h2 class="section__title">Precios</h2>
+
+                <div class="precios__container container">
+                    <div class="swiper precios-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="precios__content swiper-slide">
+                                <img src="assets/img/Coin2.png" alt="" class="precios__img">
+                                <h3 class="precios__title">Version Gratuita</h3>
+                                <span class="precios__subtitle">Esta version es gratuita, pero con funciones limitadas. Sin acceso a funciones de AI.</span>
+                                
+                                <div class="precios__prices">
+                                    <span class="precios__price">Gratis</span>
+                                </div>
+
+                            </div>
+        
+                            <div class="precios__content swiper-slide">
+                                <div class="precios__tag">Nuevo</div>
+                                <img src="assets/img/plan-prueba.png" alt="" class="precios__img">
+                                <h3 class="precios__title">Plan de Prueba</h3>
+                                <span class="precios__subtitle">Acceso completo a la app por 1 mes sin pagar nada</span>
+        
+                                <div class="precios__prices">
+                                    <span class="precios__price">$0.00</span>
+                                    <span class="precios__discount">$10.99/Mes</span>
+                                </div>
+
+                                <button class="button precios__button">
+                                    <i class='bx bx-cart-alt precios__icon'></i>
+                                </button>
+                            </div>
+        
+                            <div class="precios__content swiper-slide">
+                                <div class="precios__tag">Nuevo</div>
+                                <img src="assets/img/plan-premium.png" alt="" class="precios__img">
+                                <h3 class="precios__title">Plan Premium Mensual</h3>
+                                <span class="precios__subtitle">Accede a todas las funcionalidades de la App</span>
+        
+                                <div class="precios__prices">
+                                    <span class="precios__price">$5.99</span>
+                                    <span class="precios__discount">$10.99</span>
+                                </div>
+
+                                <button class="button precios__button">
+                                    <i class='bx bx-cart-alt precios__icon'></i>
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="section download" id="download">
+                <div class="download__container container grid">
+                    <div class="download__data">
+                        <h2 class="section__title download__title">Descargue la App Ya!</h2>
+                        <p class="download__description">Evalua las caracteristicas de nuestra App Aqui!
+                        </p>
+                        <a href="#" class="button">Descargala Ya!</a>
+                    </div>
+
+                    <img src="assets/img/Main.png" alt="" class="download__img">
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+            <footer class="footer section">
+                <div class="footer__container container grid">
+                    <div class="footer__content">
+                        <a href="#" class="footer__logo">
+                            <img src="assets/img/logo-treefy2.png" alt="" class="footer__logo-img">
+                            Treefy
+                        </a>
+
+                        <p class="footer__description">Gestionar tus finanzas nunca fue tan sencillo.<br> Ahora es posible con Treefy.</p>
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-instagram-alt' ></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-twitter' ></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Acerca de</h3>
+                        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#home" class="footer__link">App</a>
+                            </li>
+                            <li>
+                                <a href="#home" class="footer__link">Mision</a>
+                            </li>
+                            <li>
+                                <a href="#home" class="footer__link">Vision</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Nuestros Servicios</h3>
+                        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#caracteristicas" class="footer__link">Caracteristicas</a>
+                            </li>
+                            <li>
+                                <a href="#resenias" class="footer__link">Reseñas</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Nuestros Precios</h3>
+                        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#precios" class="footer__link">Version Limitada</a>
+                            </li>
+                            <li>
+                                <a href="#precios" class="footer__link">Prueba Gratuita</a>
+                            </li>
+                            <li>
+                                <a href="#precios" class="footer__link">Subscripcion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <span class="footer__copy">&#169; Treefy. All rigths reserved</span>
+
+                <img src="assets/img/Coin.png" alt="" class="footer__img-one">
+                <img src="assets/img/Coin2.png" alt="" class="footer__img-two">
             </footer>
-        </section>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+            <!--=============== SCROLL UP ===============-->
+            <a href="#" class="scrollup" id="scroll-up">
+                <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+            </a>
+        
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
