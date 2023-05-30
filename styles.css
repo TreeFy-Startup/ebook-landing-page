@@ -119,14 +119,15 @@ body {
         justify-content: center;
         padding: 30px;
         margin-bottom: 100px;
+        flex-wrap: wrap;
     }
     .carta {
-        width: 60%;
+        width: 280px;
         height: 70%;
-        margin-left: 40px;
-        margin-right: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
         background: #FFFFFF;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
