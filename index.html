@@ -1,23 +1,41 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Treefy - Landing Page</title>
         <link rel="stylesheet" type="text/css" href="styles.css" />
     </head>
     <body>
-        <header class="menu-toolbar">
-            <div class="logo-nombre">
-                <img src="logo-treefy.png" alt="logo" class="logo-img">
-                <h2 class="nombre-producto">Treefy</h2>
-            </div>
-            <nav class="listado">
-                <a href="#inicio" class="nav-a">Inicio</a>
-                <a href="#caracteristicas" class="nav-a">Características</a>
-                <a href="#precios" class="nav-a">Precios</a>
-                <a href="#reseñas" class="nav-a">Reseñas</a>
-                <a class="boton" href="../ebook-app/login_cristian.html">Prueba gratuita</a>
+        <header class="menu-toolbar header">
+            <nav class="listado navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="logo-nombre container">
+                    <img src="logo-treefy.png" alt="logo" class="logo-img">
+                    <a href="#inicio"><h2 class="nombre-producto">Treefy</h2></a>
+                </div>
+                <button class="navbar-toggler navbar-links" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav" style="display: block;">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#caracteristicas">Características</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#precios">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reseñas">Reseñas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="boton" href="../ebook-app/login_cristian.html">Prueba gratuita</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <section class="cuerpo-pagina">
@@ -149,5 +167,6 @@
                 <p>&copy;2023 Treefy. Todos los derechos reservados.</p>
             </footer>
         </section>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </body>
 </html>
