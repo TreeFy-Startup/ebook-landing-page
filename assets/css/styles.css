@@ -615,7 +615,29 @@ button{
   justify-self: center;
   animation: floating 2s ease-in-out infinite;
 }
+/*=============== Contacto ===============*/
+.container__contacto_form {
+  text-align: center;
+}
+.container__contacto_form p {
+  padding: 30px 30px;
+}
 
+.container__contacto_form label {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.container__contacto_form input,
+.container__contacto_form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #ffffff;
+  border-bottom: 1px solid #8eeeff;
+}
 
 /*=============== FOOTER ===============*/
 .footer{
