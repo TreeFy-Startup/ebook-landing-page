@@ -314,21 +314,21 @@
                     <form class="container__contacto_form">
                         <p>
                             <label>Nombre completo:</label>
-                            <input type="text" name="fullname">
+                            <input type="text" name="fullname" class="nombre_completo">
                         </p>
                         <p>
                             <label>Correo electronico:</label>
-                            <input type="email" name="correo electronico">
+                            <input type="email" name="correo electronico" class="correo_electronico">
                         </p>
                         <p>
                             <label>Numero telefonico:</label>
-                            <input type="tel" name="numero telefonico">
+                            <input type="tel" name="numero telefonico" class="numero_telefonico">
                         </p>
                         <p>
                             <label>Mensaje:</label>
-                            <textarea name="mensaje" rows="3"></textarea>
+                            <textarea name="mensaje" rows="3" class="mensaje"></textarea>
                         </p>
-                        <button class="button">Enviar</button>
+                        <button type="reset" class="button button_enviar_formulario" onclick="enviar_formulario()">Enviar</button>
                     </form>
                 </div>
             </section>

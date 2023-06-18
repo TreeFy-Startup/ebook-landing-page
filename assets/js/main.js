@@ -104,3 +104,11 @@ sr.reveal(`.home-swiper, .precios-swiper, .resenias-swiper`)
 sr.reveal(`.caracteristicas__data, .trick__content, .footer__content`,{interval: 100})
 sr.reveal(`.download__data, .discount__img`,{origin: 'left'})
 sr.reveal(`.download__img, .discount__data`,{origin: 'right'})
+
+function enviar_formulario() {
+    let nombre_completo = document.getElementsByClassName("nombre_completo");
+    let correo_electronico = document.getElementsByClassName("correo_electronico");
+    let numero_telefonico = document.getElementsByClassName("numero_telefonico");
+    let mensaje = document.getElementsByClassName("mensaje");
+    alert("Se envio de manera correcta");
+}
